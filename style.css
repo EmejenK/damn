@@ -1,0 +1,925 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,900;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,200;0,300;1,100;1,400;1,500&family=Roboto:ital,wght@0,100;0,500;0,900;1,100;1,300&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: rgb(160, 105, 160);
+}
+
+
+/*****profile start*****/
+
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+#name {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: beige;
+    line-height: 7px;
+}
+
+#name a {
+    line-height: 2px;
+    text-decoration: none;
+    color: aqua;
+    font-style: italic;
+}
+
+#profile-img {
+    text-align: center;
+    margin-top: 0.2em;
+}
+
+#profile-img img {
+    width: 60px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.navigation-bar {
+    margin-left: 1.7em;
+    line-height: 40px;
+    margin-top: 2em;
+}
+
+.navigation-bar ul li {
+    list-style: none;
+    border-top: 1px solid wheat;
+}
+
+.navigation-bar ul li a {
+    text-decoration: none;
+    color: azure;
+    font-size: 17px;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+.navigation-bar ul li a:hover {
+    padding-left: 3px;
+    color: aqua;
+}
+
+#dropdown {
+    background-color: transparent;
+    color: azure;
+    font-size: 17px;
+    border: none;
+}
+
+#dropdown option {
+    background-color: rgb(63, 1, 63);
+}
+
+#dropdown option a {
+    color: black;
+}
+
+
+/****Profile end****/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(63, 1, 63);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 30px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 12px;
+    }
+    .sidenav a {
+        font-size: 14px;
+    }
+}
+
+
+/*******Main section*******/
+
+.main-bar {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+
+/*****Home page*******/
+
+.home {
+    text-align: center;
+}
+
+.home h3 {
+    font-size: 40px;
+    font-family: 'Clicker script';
+    color: rgb(63, 1, 63);
+}
+
+.home-dashboard {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/**===first dasboard start==**/
+
+.first-dashboard {
+    background-color: rgb(236, 138, 10);
+    display: flex;
+    padding-left: 1em;
+    margin-top: 10px;
+    padding-right: 1em;
+    justify-content: space-between;
+    width: 300px;
+    border-radius: 2px;
+}
+
+#referrals {
+    line-height: 5px;
+    color: rgb(33, 41, 41);
+}
+
+#referrals p {
+    font-size: small;
+    font-style: italic;
+    color: beige;
+}
+
+#referrals h2 {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: geneva;
+    color: beige;
+}
+
+#icon {
+    padding-top: 2em;
+    font-size: 18px;
+    color: aliceblue;
+}
+
+
+/**===first dasboard end==**/
+
+
+/**===second dasboard start==**/
+
+.second-dashboard {
+    background-color: rgb(4, 60, 133);
+    display: flex;
+    padding-left: 1em;
+    padding-right: 1em;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 300px;
+    border-radius: 2px;
+}
+
+#netcoin {
+    line-height: 5px;
+    color: rgb(33, 41, 41);
+}
+
+#netcoin p {
+    font-size: small;
+    font-style: italic;
+    color: beige;
+}
+
+#netcoin h2 {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: geneva;
+    color: beige;
+}
+
+#icon {
+    padding-top: 2em;
+    font-size: 18px;
+    color: aliceblue;
+}
+
+
+/**===second dasboard end==**/
+
+
+/**===third dasboard start==**/
+
+.third-dashboard {
+    background-color: rgb(40, 167, 2);
+    display: flex;
+    padding-left: 1em;
+    padding-right: 1em;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+#articles {
+    line-height: 5px;
+    color: rgb(33, 41, 41);
+}
+
+#articles p {
+    font-size: small;
+    font-style: italic;
+    color: beige;
+}
+
+#articles h2 {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: geneva;
+    color: beige;
+}
+
+#icon {
+    padding-top: 2em;
+    font-size: 18px;
+    color: aliceblue;
+}
+
+
+/**===third dasboard end==**/
+
+
+/**===fourth dasboard start==**/
+
+.fourth-dashboard {
+    background-color: rgb(117, 1, 102);
+    display: flex;
+    padding-left: 1em;
+    padding-right: 1em;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 300px;
+    border-radius: 2px;
+}
+
+#earnings {
+    line-height: 5px;
+    color: rgb(33, 41, 41);
+}
+
+#earnings p {
+    font-size: small;
+    font-style: italic;
+    color: beige;
+}
+
+#earnings h2 {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: geneva;
+    color: beige;
+}
+
+#icon {
+    padding-top: 2em;
+    font-size: 18px;
+    color: aliceblue;
+}
+
+
+/**===third dasboard end==**/
+
+.wallet {
+    text-align: center;
+    padding-top: 1em;
+}
+
+.wallet h3 {
+    border-bottom: 3px solid purple;
+}
+
+@media screen and (max-width: 965px) {
+    .home-dashboard {
+        display: block;
+    }
+}
+
+
+/********** withdrawals start***********/
+
+.coins {
+    background-color: rgb(88, 2, 77);
+    margin: auto;
+    margin-top: 10em;
+    height: 200px;
+    width: 300px;
+    border-radius: 4px;
+    box-shadow: 4px 4px 7px 25px white;
+}
+
+.coins form {
+    display: block;
+}
+
+.coins form h3 {
+    color: whitesmoke;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 2em;
+}
+
+.coins form input {
+    margin-left: 5em;
+    margin-bottom: 2em;
+    padding: 6px;
+    border: none;
+    background-color: transparent;
+    color: azure;
+}
+
+#button {
+    background-color: rgb(1, 85, 110);
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 7em;
+}
+
+#button:hover {
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+
+/************withdrawals end************/
+
+
+/*******profile edit start********/
+
+
+/*==profile edit start==*/
+
+.profile-pic {
+    width: 200px;
+    max-height: 200px;
+    display: inline-block;
+}
+
+.file-upload {
+    display: none;
+}
+
+.circle {
+    border-radius: 100% important;
+    overflow: hidden;
+    width: 128px;
+    height: 128px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 72px;
+}
+
+.circle img {
+    max-width: 100%;
+    height: auto;
+}
+
+.p-image {
+    position: absolute;
+    top: 167px;
+    right: 30px;
+    color: #06b90f66;
+    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.p-image:hover {
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.upload-button {
+    font-size: 1.2em;
+}
+
+.upload-button:hover {
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    color: #031294;
+}
+
+
+/*==profile edit end==*/
+
+.update-profile {
+    width: 250px;
+    height: 300px;
+    margin: auto;
+    margin-top: 8em;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: rgb(250, 250, 250);
+}
+
+.update-profile form input {
+    margin-top: 1em;
+    margin-left: 3em;
+    padding: 6px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.back {
+    text-align: center;
+    margin-top: 1.9em;
+}
+
+.back a {
+    padding: 5px;
+    color: black;
+    border-radius: 4px;
+    border: 1px solid white;
+}
+
+.back :hover {
+    background-color: rgb(4, 60, 133);
+    transition: .3s;
+}
+
+.back:hover .go {
+    color: azure;
+}
+
+
+/*******profile edit end********/
+
+
+/**==============Articles start=====================**/
+
+.articles {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-left: 2em;
+}
+
+.articles h3 {
+    text-align: center;
+    font-size: 19px;
+    color: rgb(1, 58, 58);
+}
+
+.articles-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.first-contain {
+    width: 500px;
+    height: 150px;
+    background-color: rgb(102, 4, 89);
+    margin-top: 1em;
+    border-radius: 4px;
+}
+
+.first-contain p {
+    color: rgb(238, 238, 234);
+    padding-left: 3px;
+    padding-top: 2px;
+}
+
+.first-contain input {
+    float: right;
+    margin-top: 5em;
+    padding: 7px;
+    background-color: rgb(59, 4, 52);
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.first-contain input:hover {
+    background-color: rgb(245, 98, 225);
+}
+
+@media (max-width: 800px) {
+    .articles-container {
+        display: inline-block;
+    }
+    .first-contain {
+        width: 400px;
+    }
+}
+
+@media (min-width:801px) {
+    .first-contain {
+        width: 400px;
+    }
+}
+
+
+/**==============Articles end=====================**/
+
+
+/*******============Spin and win start==========*****/
+
+.container-spin {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-spin .spinbtn {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.1em;
+    border-radius: 4px solid black;
+    cursor: pointer;
+    user-select: none;
+}
+
+.spinbtn::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    width: 20px;
+    height: 30px;
+    background: aliceblue;
+    clip-path: polygon(50% 0%, 15% 100%, 85% 100%);
+}
+
+.wheel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #444;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 0 5px #333, 0 0 0 15px #fff, 0 0 0 18px #111;
+    /*animation: spin 4s infinite linear;*/
+    transition: transform 8s ease-in-out;
+}
+
+.wheel .number {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: var(--clr);
+    transform-origin: bottom-right;
+    transform: rotate(calc(45deg * var(--i)));
+    clip-path: polygon(0 0, 56% 0, 100% 100%, 0 56%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.number span {
+    position: relative;
+    transform: rotate(45deg);
+    font-size: 2em;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 3px 5px 2px rgba(0, 0, 0, 0.15);
+}
+
+.number span::after {
+    content: '$';
+    position: absolute;
+    font-size: 0.75em;
+    font-weight: 500;
+}
+
+
+/*******============Spin and win end==========*****/
+
+
+/***_________login, forgot password and register code starts here___________***/
+
+.bodyy {
+    font-family: "Lato", sans-serif;
+    background-color: rgb(160, 100, 150);
+}
+
+.form h3 {
+    margin-left: 5em;
+    color: #1aff1a;
+    padding-top: 5px;
+}
+
+.form {
+    height: 35em;
+    width: 20em;
+    margin: auto;
+    margin-top: 3em;
+    border-radius: 5px;
+    background-color: rgb(88, 2, 77);
+    box-shadow: 4px 4px 7px 25px white;
+}
+
+.form input {
+    padding: 1em;
+    margin-top: 2em;
+    border: none;
+    border-radius: 5px;
+    margin-left: 1.5em;
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+#button {
+    margin-left: 7em;
+    margin-top: 1em;
+    background-color: rgb(1, 85, 110);
+    border-radius: 4px;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+}
+
+
+/*********AHREF***********/
+
+#for {
+    padding: 1em;
+}
+
+#for a {
+    text-decoration: none;
+    color: ghostwhite;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 14px;
+}
+
+
+/*******************FORGET PASSWORD******************/
+
+.formp {
+    background-color: rgb(88, 2, 77);
+    box-shadow: 4px 4px 7px 25px white;
+    height: 15em;
+    width: 20em;
+    margin: auto;
+    margin-top: 3em;
+    border-radius: 5px;
+}
+
+.formp input {
+    padding: 1em;
+    margin-top: 2em;
+    border: none;
+    border-radius: 5px;
+    margin-left: 1.5em;
+    background-color: transparent;
+}
+
+
+/*********************LOGIN*************/
+
+.forml h3 {
+    margin-left: 5em;
+    color: #1aff1a;
+    padding-top: 3px;
+}
+
+.forml {
+    background-color: rgb(88, 2, 77);
+    box-shadow: 4px 4px 7px 25px white;
+    height: 20em;
+    width: 20em;
+    margin: auto;
+    margin-top: 3em;
+    border-radius: 5px;
+}
+
+.forml input {
+    padding: 1em;
+    margin-top: 2em;
+    border: none;
+    border-radius: 5px;
+    margin-left: 1.5em;
+    background-color: transparent;
+}
+
+.forml label a {
+    color: ghostwhite;
+    text-decoration: none;
+    font-size: 14px;
+    font-style: italic;
+}
+
+
+/***_________login, forgot password and register code ends here___________***/
+
+
+/***________________Contact Us page starts______________________***/
+
+.cont-body {
+    background-color: rgb(160, 100, 150);
+}
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /***background: url(bg.jpg);
+    background-size: cover;**/
+}
+
+.content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 32px;
+    font-weight: 500;
+    color: rgb(240, 6, 209);
+}
+
+.content p {
+    font-weight: 300;
+    color: #fff;
+}
+
+.cont-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contactInfo {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    position: relative;
+    padding: 17px;
+    display: flex;
+}
+
+.icon {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.text h4 {
+    font-weight: 500;
+    color: white;
+}
+
+.text h4 a {
+    color: rgb(236, 138, 10);
+}
+
+.text h4 a:hover {
+    color: aqua;
+    transition: 0.5s;
+}
+
+.contactform {
+    width: 40%;
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0 10px rgba(2, 2, 88, 0.2);
+}
+
+.contactform h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.inputbox input,
+textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #333;
+    resize: none;
+    font-style: italic;
+}
+
+.inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.inputbox input:focus~span,
+.inputbox input:valid~span,
+.inputbox textarea:focus~span,
+.inputbox textarea:valid~span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.inputbox input[type="submit"] {
+    width: 100px;
+    background: #00bcd4;
+    color: rgb(65, 8, 50);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.inputbox input[type="submit"]:hover {
+    background: transparent;
+    border: 1px solid #00bcd4;
+    transition: 0.5s;
+}
+
+@media(max-width:991px) {
+    .contact {
+        padding: 50px;
+    }
+    .cont-container {
+        flex-direction: column;
+    }
+    .contactInfo {
+        margin-bottom: 40px;
+    }
+    .contactInfo,
+    .contactform {
+        width: 100%;
+    }
+}
+
+
+/***________________Contact Us page ends______________________***/

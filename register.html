@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>practice</title>
+</head>
+
+<body class="bodyy">
+    <div class="form">
+        <h3>REGISTER</h3>
+        <form action="connect.php" method="POST">
+            <input type="text" placeholder="Username" name="username"></input>
+            <input type="email" placeholder="Your Email" name="email" required></input>
+            <input type="password" placeholder="Password" name="password" required></input>
+            <input type="password" placeholder="Confirm Password" name="Cpassword" required></input> <br>
+            <label>
+            <input type="checkbox"  name="remember">Remember me</input>
+          </label> <br>
+            <script>
+                //  function show_alert() {
+                //alert("Details Saved Successfully!");
+                // }
+            </script>
+            <button type="button" onclick="show_alert()" id="button">SUBMIT</button><br>
+
+            <div id="for">
+                <label>Have an account?<a href="login.html">LOG IN</a></label> <br><br>
+                <label>Forgot password?<a href="forget-password.html">Reset</a></label>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

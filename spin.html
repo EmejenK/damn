@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+    </style>
+    <title></title>
+
+</head>
+
+<body>
+    <div class="container-spin">
+        <div class="spinbtn">Spin</div>
+        <div class="wheel">
+            <div class="number" style="--i:1;--clr:#eeea1b;"><span>7</span></div>
+            <div class="number" style="--i:2;--clr:#1be0ee;"><span>17</span></div>
+            <div class="number" style="--i:3;--clr:#8c2ef8;"><span>27</span></div>
+            <div class="number" style="--i:4;--clr:#ee1baf;"><span>74</span></div>
+            <div class="number" style="--i:5;--clr:#f7565e;"><span>79</span></div>
+            <div class="number" style="--i:6;--clr:#fc9209;"><span>97</span></div>
+            <div class="number" style="--i:7;--clr:#d04cf8;"><span>70</span></div>
+            <div class="number" style="--i:8;--clr:#5eee1b;"><span>37</span></div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let wheel = document.querySelector('.wheel');
+            let spinbtn = document.querySelector('.spinbtn');
+            let value = Math.ceil(Math.random() * 3600);
+
+            spinbtn.onclick = function() {
+                wheel.style.transform = 'rotate(' + value + 'deg)';
+                value += Math.ceil(Math.random() * 3600);
+            };
+        });
+
+
+
+
+
+
+
+
+
+
+
+        //let wheel = document.querySelector(' .wheel');
+        //let spinbtn = document.querySelector(' .spinbtn');
+        //let value = Math.ceil(Math.random() * 3600);
+
+        // spinbtn.onclick = function() {
+        //wheel.style.transform = "rotate(" + value + "deg)";
+        // value += Math.ceil(Math.random() * 3600);
+        //}
+    </script>
+</body>
+
+</html>

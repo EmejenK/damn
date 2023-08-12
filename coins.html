@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DamnWins</title>
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" style="color: aliceblue;" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="sider-bar">
+
+            <div class="header">
+                <div id="profile-img">
+                    <img src="images/profile.jpg" alt="">
+                </div>
+                <div id="name">
+                    <h4>Emejen Katii</h4>
+                    <p>emejen460@gmail.com</p>
+                    <a href="#">Edit Your Profile</a>
+                </div>
+            </div>
+
+            <div class="navigation-bar">
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="spin.html">Spin and Win</a></li>
+                    <li><a href="coins.html">Collect Coins</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="earnings.html">Withdraw all Earnings</a></li>
+                    <li><a href="coins.html">Withdraw Coins</a></li>
+                    <li><a href="contact.html">Contact-Us</a></li>
+                    <li><a href="#">Settings</a></li>
+
+                </ul>
+                <ul>
+                    <li><a href="#">LogOut</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!-----------Opening button----------->
+    <span style="font-size:25px;cursor:pointer;;" class="open" onclick="openNav()">&#9776;</span>
+
+
+    <div class="coins">
+        <form action="">
+            <h3>Withdraw Your Coins Here</h3>
+            <input type="number" placeholder="Enter amount"><br>
+            <input type="button" value="Withdraw" id="button">
+        </form>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>

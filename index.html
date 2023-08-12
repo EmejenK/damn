@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DamnWins</title>
+    <!-----------CSS--------------->
+    <link rel="stylesheet" href="style.css">
+    <!--------Font-Awesome-------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" style="color: aliceblue;" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="sider-bar">
+
+            <div class="header">
+                <div id="profile-img">
+                    <img src="images/profile.jpg" alt="">
+                </div>
+                <div id="name">
+                    <h4>Username</h4>
+                    <p>Email</p>
+                    <a href="profile.html">Edit Your Profile</a>
+                </div>
+            </div>
+
+            <div class="navigation-bar">
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="spin.html">Spin and Win</a></li>
+                    <li><a href="coins.html">Collect Coins</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="earnings.html">Withdraw all Earnings</a></li>
+                    <li><a href="coins.html">Withdraw Coins</a></li>
+                    <li><a href="contact.html">Contact-Us</a></li>
+                    <li><a href="#">Settings</a></li>
+
+                </ul>
+                <ul>
+                    <li><a href="#">LogOut</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!-----------Opening button----------->
+    <span style="font-size:25px;cursor:pointer;;" class="open" onclick="openNav()">&#9776;</span>
+
+    <!---------main--------->
+    <section class="main-bar">
+        <!---===Home page===-->
+        <div class="home">
+            <h3>Damn<span>Wins</span></h3>
+            <p>DamnWins brings you the best offers ever for your.</p>
+        </div>
+        </div>
+        <div class="main-home-dashboard">
+            <div class="home-dashboard" id="homepage">
+                <!---===first dashbord start==---->
+                <div class="first-dashboard">
+                    <div id="referrals">
+                        <h4>Referrals</h4>
+                        <h2>11</h2>
+                        <p>This Month is 0% of last Month</p>
+                    </div>
+                    <div id="icon">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <!---===first dashbord end==---->
+
+                <!---===second dashbord start==---->
+                <div class="second-dashboard">
+                    <div id="netcoin">
+                        <h4>NetCoins</h4>
+                        <h2>7</h2>
+                        <p>0 bought, <span>0 sold</span></p>
+                    </div>
+                    <div id="icon">
+                        <i class="fa fa-database" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <!---===second dashbord end==---->
+
+                <!---===third dashbord start==---->
+                <div class="third-dashboard">
+                    <div id="articles">
+                        <h4>Article views</h4>
+                        <h2>17</h2>
+                        <p>Ksh 0.00 redeemed</p>
+                    </div>
+                    <div id="icon">
+                        <i class="fa fa-credit-card" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <!---===third dashbord end==---->
+                <!---===fourth dashbord start==---->
+                <div class="fourth-dashboard">
+                    <div id="earnings">
+                        <h4>Total Earned</h4>
+                        <h2>KSH.<span>1700.00</span></h2>
+                        <p>0% of last Month</p>
+                    </div>
+                    <div id="icon">
+                        <i class="fa fa-usd" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <!---===fourth dashbord end==---->
+            </div>
+            <!--------------->
+            <div class="wallet">
+                <h3>Your Wallet As It Stands</h3>
+                <h2>Ksh.<span>1700.00</span></h2>
+            </div>
+        </div>
+
+    </section>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+</body>
+
+</html>
