@@ -493,7 +493,7 @@ body {
 }
 
 .first-contain {
-    width: 500px;
+    width: 300px;
     height: 150px;
     background-color: rgb(102, 4, 89);
     margin-top: 1em;
@@ -527,13 +527,13 @@ body {
         display: inline-block;
     }
     .first-contain {
-        width: 400px;
+        width: 300px;
     }
 }
 
 @media (min-width:801px) {
     .first-contain {
-        width: 400px;
+        width: 300px;
     }
 }
 
@@ -545,8 +545,8 @@ body {
 
 .container-spin {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
